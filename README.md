@@ -55,7 +55,7 @@ Sargan test assesses overidentifying restrictions to verify instrument exogeneit
 
 Identifies that the number of books may be an invalid instrument, while parental education instruments are valid.
 
-Key Findings
+# Key Findings
 
 OLS estimates of the education effect are biased downward due to endogeneity.
 
@@ -65,7 +65,7 @@ Not all instruments are valid; careful selection is critical for consistent esti
 
 Economic interpretation: Parental education strongly affects children’s education, but individual wage outcomes vary depending on job choice and sector.
 
-Tools and Packages Used
+# Tools and Packages Used
 
 tidyverse / dplyr – Data manipulation and filtering
 

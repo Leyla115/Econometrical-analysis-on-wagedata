@@ -1,10 +1,9 @@
 # Instrumental Variable Regression Analysis
-Overview
+# Overview
 
 This project demonstrates how to analyze the effect of education on wages using OLS and instrumental variable (IV) regression methods. The analysis uses data from Estonia and implements both manual two-stage least squares (2SLS) and automated IV regression functions in R. It also includes statistical tests to evaluate the validity and strength of instruments.
 
-Project Steps
-1. Data Preparation
+# 1. Data Preparation
 
 Loads the dataset from a public CSV file.
 
@@ -14,7 +13,7 @@ Transforms the wage variable into logarithmic form.
 
 Samples 90% of the dataset for the analysis.
 
-2. Ordinary Least Squares (OLS) Regression
+# 2. Ordinary Least Squares (OLS) Regression
 
 Estimates a baseline linear regression model of log wages on age, gender, education, and weekly hours.
 
@@ -22,7 +21,7 @@ Interprets the estimated effect of education on wages.
 
 Presents results in a stargazer-like table for clarity.
 
-3. Manual Two-Stage Least Squares (2SLS)
+# 3. Manual Two-Stage Least Squares (2SLS)
 
 First stage: Regresses education on potential instruments (father’s education, mother’s education, number of books) and other covariates.
 
@@ -36,7 +35,7 @@ Confirms that IV estimates differ from OLS estimates in the expected direction.
 
 Tests residuals to verify statistical significance.
 
-4. Instrumental Variable Regression Using ivreg
+# 4. Instrumental Variable Regression Using ivreg
 
 Implements IV regression using ivreg() from the AER package.
 
@@ -46,7 +45,7 @@ Compares IV estimates with the manually computed 2SLS results.
 
 Finds that education increases wages by approximately 20% in the IV model.
 
-5. Instrument Validity and Diagnostic Tests
+# 5. Instrument Validity and Diagnostic Tests
 
 F-test for weak instruments confirms instruments are relevant.
 
